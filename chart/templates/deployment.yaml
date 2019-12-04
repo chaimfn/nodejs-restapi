@@ -23,12 +23,12 @@ spec:
         - name: "PORT"
           value: 3000
         volumeMounts:
-        - name: "chaimfn--{{.Values.image.name}}_todo-file_volume"
+        - name: "chaimfn--{{.Values.image.name}}-volume-todofile"
           mountPath: "/app/src/db/todo.json"
       volumes:
-      - name: "chaimfn--{{.Values.image.name}}_todo-file_volume"
+      - name: "chaimfn--{{.Values.image.name}}-volume-todofile"
         configMap:
-          name: "chaimfn--{{.Values.image.name}}_todo-file_configMap"
+          name: "chaimfn--{{.Values.image.name}}-configmap-todofile"
           items:
           - key: "todo.json"
             path: "keys"
