@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-restapi-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve:dev": "node --require dotenv/config ./src/server.js",
+    "serve": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0"
+  }
+}
