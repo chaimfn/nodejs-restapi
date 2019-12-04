@@ -22,14 +22,11 @@ spec:
         env:
         - name: "PORT"
           value: "{{.Values.env.port}}"
-        volumeMounts:
-        - name: "chaimfn--{{.Values.image.name}}-volume-todofile"
-          mountPath: "/usr/app/src/db/"
-      volumes:
-      - name: "chaimfn--{{.Values.image.name}}-volume-todofile"
-        configMap:
-          name: "chaimfn--{{.Values.image.name}}-configmap-todofile"
-#          items:
-#          - key: "todo.json"
-#            path: "todo.json"
+#        volumeMounts:
+#        - name: "chaimfn--{{.Values.image.name}}-volume-todofile"
+#          mountPath: "/usr/app/src/db/"
+#      volumes:
+#      - name: "chaimfn--{{.Values.image.name}}-volume-todofile"
+#        configMap:
+#          name: "chaimfn--{{.Values.image.name}}-configmap-todofile"
     
