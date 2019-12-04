@@ -21,7 +21,7 @@ spec:
         image: "{{.Values.image.repository}}{{.Values.image.name}}:{{.Values.image.tag}}"
         env:
         - name: "PORT"
-          value: 3000
+          value: "{{.Values.env.port}}"
         volumeMounts:
         - name: "chaimfn--{{.Values.image.name}}-volume-todofile"
           mountPath: "/app/src/db/todo.json"

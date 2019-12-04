@@ -10,7 +10,7 @@ spec:
   ports:
   - protocol: "TCP"
     port: 80
-    targetPort: 3000
+    targetPort: {{.Values.env.port}}
   selector:
     app: "chaimfn--{{.Values.image.name}}"
   type: "LoadBalancer"
