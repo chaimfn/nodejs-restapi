@@ -1,0 +1,17 @@
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "chaimfn--{{.Values.image.name}}--service"
+  namespace: "default"
+  labels:
+    app: "chaimfn--{{.Values.image.name}}"
+spec:
+  ports:
+  - protocol: "TCP"
+    port: 80
+    targetPort: 3000
+  selector:
+    app: "chaimfn--{{.Values.image.name}}"
+  type: "LoadBalancer"
+    

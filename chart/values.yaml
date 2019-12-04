@@ -1,0 +1,8 @@
+image:
+  repository: "gcr.io/shlomateam-playground/chaimfn/"
+  name: "nodejs-restapi"
+  tag: "72"
+deployment:
+  replicas: "1"
+env:
+  port: "3000"
