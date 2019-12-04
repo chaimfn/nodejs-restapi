@@ -1,9 +1,0 @@
----
-apiVersion: v1
-kind: "ConfigMap"
-metadata:
-  name: "chaimfn--{{.Values.image.name}}-configmap-todofile"
-data:
-  todo.json: |
-    [{"id":1,"name":"Learn K8S"},{"id":2,"name":"Config Nexus"},{"id":3,"name":"Write deploy.yaml"}]
-    
