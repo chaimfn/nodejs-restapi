@@ -29,7 +29,4 @@ spec:
       - name: "chaimfn--{{.Values.image.name}}-volume-todofile"
         configMap:
           name: "chaimfn--{{.Values.image.name}}-configmap-todofile"
-#          items:
-#          - key: "todo.json"
-#            path: "todo.json"
     
